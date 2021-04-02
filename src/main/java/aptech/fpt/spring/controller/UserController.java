@@ -1,8 +1,10 @@
 package aptech.fpt.spring.controller;
+
+import aptech.fpt.spring.entity.User;
+
 import aptech.fpt.spring.service.SecurityService;
 import aptech.fpt.spring.service.UserService;
 import aptech.fpt.spring.validator.UserValidator;
-import org.apache.catalina.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 @Controller
 public class UserController {
     @Autowired
-    private UserController userService;
+    private UserService userService;
     @Autowired
     private SecurityService securityService;
     @Autowired
